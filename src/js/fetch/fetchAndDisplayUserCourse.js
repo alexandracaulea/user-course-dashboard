@@ -1,6 +1,6 @@
 export default async function fetchAndDisplayUserCourse(id) {
   try {
-    const response = await fetch('/src/data/courses.json');
+    const response = await fetch('/data/courses.json');
     if (!response.ok) throw new Error('Error, something went wrong');
 
     const allCourses = await response.json();

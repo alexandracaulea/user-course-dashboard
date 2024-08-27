@@ -2,7 +2,7 @@ import { displayError } from '../utils/error';
 
 export default async function fetchCourses() {
   try {
-    const response = await fetch('/courses.json');
+    const response = await fetch('/data/courses.json');
     const data = await response.json();
 
     if (!response.ok) throw new Error('Error, something went wrong');

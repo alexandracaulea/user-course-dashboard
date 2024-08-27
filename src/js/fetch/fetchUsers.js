@@ -2,7 +2,7 @@ import { displayError } from '../utils/error';
 
 export default async function fetchUsers() {
   try {
-    const response = await fetch('/users.json');
+    const response = await fetch('/data/users.json');
     const data = await response.json();
 
     if (!response.ok) throw new Error('Error, something went wrong');
