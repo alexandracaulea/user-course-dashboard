@@ -1,0 +1,304 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Alice",
+      "last_name": "Johnson",
+      "age": 34,
+      "gender": "Female",
+      "email": "alice.johnson@samplemail.com",
+      "phone": "555-678-1234",
+      "username": "alicej34",
+      "birthdate": "1989-07-21",
+      "height": "5'7\"",
+      "weight": 145,
+      "education": "Master's Degree in Sociology",
+      "company": {
+        "name": "Bright Horizons",
+        "position": "Social Worker",
+        "salary": 62000,
+        "start_date": "2016-11-05"
+      }
+    },
+    {
+      "id": 2,
+      "first_name": "Michael",
+      "last_name": "Brown",
+      "age": 29,
+      "gender": "Male",
+      "email": "michael.brown@samplemail.com",
+      "phone": "555-876-5432",
+      "username": "mikeb29",
+      "birthdate": "1994-03-14",
+      "height": "6'1\"",
+      "weight": 185,
+      "education": "Bachelor's Degree in History",
+      "company": {
+        "name": "Global Education",
+        "position": "History Teacher",
+        "salary": 50000,
+        "start_date": "2019-09-01"
+      }
+    },
+    {
+      "id": 3,
+      "first_name": "Isabella",
+      "last_name": "Wang",
+      "age": 27,
+      "gender": "Female",
+      "email": "isabella.wang@samplemail.com",
+      "phone": "555-321-6549",
+      "username": "bella_w",
+      "birthdate": "1997-01-30",
+      "height": "5'4\"",
+      "weight": 135,
+      "education": "Bachelor's Degree in Graphic Design",
+      "company": {
+        "name": "Creative Studios",
+        "position": "Graphic Designer",
+        "salary": 54000,
+        "start_date": "2021-02-10"
+      }
+    },
+    {
+      "id": 4,
+      "first_name": "Liam",
+      "last_name": "Martinez",
+      "age": 35,
+      "gender": "Male",
+      "email": "liam.martinez@samplemail.com",
+      "phone": "555-789-4561",
+      "username": "liam_m35",
+      "birthdate": "1988-09-25",
+      "height": "5'11\"",
+      "weight": 175,
+      "education": "Master's Degree in Engineering",
+      "company": {
+        "name": "TechWorld",
+        "position": "Senior Engineer",
+        "salary": 98000,
+        "start_date": "2015-07-15"
+      }
+    },
+    {
+      "id": 5,
+      "first_name": "Mia",
+      "last_name": "Davis",
+      "age": 26,
+      "gender": "Female",
+      "email": "mia.davis@samplemail.com",
+      "phone": "555-654-3210",
+      "username": "miad26",
+      "birthdate": "1998-06-11",
+      "height": "5'5\"",
+      "weight": 125,
+      "education": "Bachelor's Degree in Environmental Science",
+      "company": {
+        "name": "EcoSystems Inc.",
+        "position": "Environmental Scientist",
+        "salary": 67000,
+        "start_date": "2020-04-20"
+      }
+    },
+    {
+      "id": 6,
+      "first_name": "Oliver",
+      "last_name": "Taylor",
+      "age": 31,
+      "gender": "Male",
+      "email": "oliver.taylor@samplemail.com",
+      "phone": "555-567-4321",
+      "username": "olivert31",
+      "birthdate": "1993-11-09",
+      "height": "6'2\"",
+      "weight": 190,
+      "education": "Bachelor's Degree in Physical Education",
+      "company": {
+        "name": "FitLife Gym",
+        "position": "Fitness Trainer",
+        "salary": 46000,
+        "start_date": "2017-08-01"
+      }
+    },
+    {
+      "id": 7,
+      "first_name": "Sophia",
+      "last_name": "Garcia",
+      "age": 33,
+      "gender": "Female",
+      "email": "sophia.garcia@samplemail.com",
+      "phone": "555-789-0123",
+      "username": "sophiag33",
+      "birthdate": "1991-04-17",
+      "height": "5'8\"",
+      "weight": 140,
+      "education": "Bachelor's Degree in Culinary Arts",
+      "company": {
+        "name": "The Gourmet Kitchen",
+        "position": "Executive Chef",
+        "salary": 71000,
+        "start_date": "2014-12-12"
+      }
+    },
+    {
+      "id": 8,
+      "first_name": "Lucas",
+      "last_name": "Hernandez",
+      "age": 28,
+      "gender": "Male",
+      "email": "lucas.hernandez@samplemail.com",
+      "phone": "555-432-6789",
+      "username": "lucash28",
+      "birthdate": "1995-07-02",
+      "height": "5'10\"",
+      "weight": 165,
+      "education": "Bachelor's Degree in Marketing",
+      "company": {
+        "name": "MarketPro",
+        "position": "Marketing Specialist",
+        "salary": 59000,
+        "start_date": "2018-11-20"
+      }
+    },
+    {
+      "id": 9,
+      "first_name": "Charlotte",
+      "last_name": "Nguyen",
+      "age": 29,
+      "gender": "Female",
+      "email": "charlotte.nguyen@samplemail.com",
+      "phone": "555-654-9870",
+      "username": "charlotten29",
+      "birthdate": "1994-05-06",
+      "height": "5'6\"",
+      "weight": 135,
+      "education": "Master's Degree in Mechanical Engineering",
+      "company": {
+        "name": "Innovatech Solutions",
+        "position": "Mechanical Engineer",
+        "salary": 93000,
+        "start_date": "2017-05-22"
+      }
+    },
+    {
+      "id": 10,
+      "first_name": "James",
+      "last_name": "Wilson",
+      "age": 32,
+      "gender": "Male",
+      "email": "james.wilson@samplemail.com",
+      "phone": "555-098-7654",
+      "username": "jamesw32",
+      "birthdate": "1992-11-18",
+      "height": "6'0\"",
+      "weight": 180,
+      "education": "Bachelor's Degree in Psychology",
+      "company": {
+        "name": "Mindful Therapy",
+        "position": "Clinical Psychologist",
+        "salary": 76000,
+        "start_date": "2019-02-14"
+      }
+    },
+    {
+      "id": 11,
+      "first_name": "Zoe",
+      "last_name": "Smith",
+      "age": 27,
+      "gender": "Female",
+      "email": "zoe.smith@samplemail.com",
+      "phone": "555-876-5432",
+      "username": "zoes27",
+      "birthdate": "1996-01-20",
+      "height": "5'5\"",
+      "weight": 125,
+      "education": "Bachelor's Degree in Business Administration",
+      "company": {
+        "name": "FinancePro Inc.",
+        "position": "Financial Advisor",
+        "salary": 70000,
+        "start_date": "2018-06-10"
+      }
+    },
+    {
+      "id": 12,
+      "first_name": "Elijah",
+      "last_name": "White",
+      "age": 28,
+      "gender": "Male",
+      "email": "elijah.white@samplemail.com",
+      "phone": "555-123-8765",
+      "username": "elijahw28",
+      "birthdate": "1995-12-30",
+      "height": "6'1\"",
+      "weight": 185,
+      "education": "Associate's Degree in Electrical Engineering",
+      "company": {
+        "name": "EnergyTech",
+        "position": "Electrical Engineer",
+        "salary": 87000,
+        "start_date": "2020-10-01"
+      }
+    },
+    {
+      "id": 13,
+      "first_name": "Amelia",
+      "last_name": "Clark",
+      "age": 30,
+      "gender": "Female",
+      "email": "amelia.clark@samplemail.com",
+      "phone": "555-098-7654",
+      "username": "ameliac30",
+      "birthdate": "1993-03-15",
+      "height": "5'6\"",
+      "weight": 130,
+      "education": "Bachelor's Degree in Fine Arts",
+      "company": {
+        "name": "Artistic Visions",
+        "position": "Art Director",
+        "salary": 58000,
+        "start_date": "2022-03-05"
+      }
+    },
+    {
+      "id": 14,
+      "first_name": "Noah",
+      "last_name": "Lee",
+      "age": 34,
+      "gender": "Male",
+      "email": "noah.lee@samplemail.com",
+      "phone": "555-321-9870",
+      "username": "noahl34",
+      "birthdate": "1989-08-14",
+      "height": "6'0\"",
+      "weight": 190,
+      "education": "Master's Degree in Data Science",
+      "company": {
+        "name": "DataCorp",
+        "position": "Data Scientist",
+        "salary": 125000,
+        "start_date": "2016-09-01"
+      }
+    },
+    {
+      "id": 15,
+      "first_name": "Lily",
+      "last_name": "Harris",
+      "age": 31,
+      "gender": "Female",
+      "email": "lily.harris@samplemail.com",
+      "phone": "555-567-8901",
+      "username": "lilyh31",
+      "birthdate": "1992-07-25",
+      "height": "5'3\"",
+      "weight": 125,
+      "education": "Master's Degree in Education",
+      "company": {
+        "name": "Future Leaders Academy",
+        "position": "Principal",
+        "salary": 67000,
+        "start_date": "2020-08-01"
+      }
+    }
+  ]
+}

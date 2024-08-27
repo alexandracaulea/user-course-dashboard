@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "duration": "10 weeks",
+    "category": "Social Work",
+    "title": "Community Outreach Strategies",
+    "description": "Learn effective strategies for community outreach and engagement."
+  },
+  {
+    "id": 2,
+    "userId": 1,
+    "duration": "14 weeks",
+    "category": "Sociology",
+    "title": "Social Policy and Welfare",
+    "description": "Explore the development and impact of social policies on communities."
+  },
+  {
+    "id": 3,
+    "userId": 2,
+    "duration": "8 weeks",
+    "category": "Education",
+    "title": "Teaching History Effectively",
+    "description": "Learn techniques and strategies for teaching history in engaging ways."
+  },
+  {
+    "id": 4,
+    "userId": 2,
+    "duration": "12 weeks",
+    "category": "Educational Technology",
+    "title": "Integrating Technology in the Classroom",
+    "description": "Learn how to incorporate technology into your teaching practice."
+  },
+  {
+    "id": 5,
+    "userId": 3,
+    "duration": "10 weeks",
+    "category": "Graphic Design",
+    "title": "Advanced Photoshop Techniques",
+    "description": "Master advanced techniques in Adobe Photoshop for professional design work."
+  },
+  {
+    "id": 6,
+    "userId": 3,
+    "duration": "12 weeks",
+    "category": "Creative Software",
+    "title": "Illustrator for Beginners",
+    "description": "Learn the basics of Adobe Illustrator and how to create vector art."
+  },
+  {
+    "id": 7,
+    "userId": 4,
+    "duration": "8 weeks",
+    "category": "Engineering",
+    "title": "Advanced Mechanical Systems",
+    "description": "Dive deep into the mechanics of advanced systems and machinery."
+  },
+  {
+    "id": 8,
+    "userId": 4,
+    "duration": "14 weeks",
+    "category": "Engineering",
+    "title": "Thermodynamics",
+    "description": "Understand the principles of thermodynamics and their applications in engineering."
+  },
+  {
+    "id": 9,
+    "userId": 5,
+    "duration": "6 weeks",
+    "category": "Environmental Science",
+    "title": "Conservation Strategies",
+    "description": "Learn about various strategies for environmental conservation."
+  },
+  {
+    "id": 10,
+    "userId": 5,
+    "duration": "10 weeks",
+    "category": "Ecology",
+    "title": "Urban Ecology",
+    "description": "Explore the relationship between urban environments and ecological systems."
+  },
+  {
+    "id": 11,
+    "userId": 6,
+    "duration": "8 weeks",
+    "category": "Physical Education",
+    "title": "Personal Training Fundamentals",
+    "description": "Learn the basics of personal training and fitness coaching."
+  },
+  {
+    "id": 12,
+    "userId": 6,
+    "duration": "12 weeks",
+    "category": "Wellness",
+    "title": "Nutrition for Fitness",
+    "description": "Understand the role of nutrition in fitness and wellness."
+  },
+  {
+    "id": 13,
+    "userId": 7,
+    "duration": "10 weeks",
+    "category": "Culinary Arts",
+    "title": "Gourmet Cooking Techniques",
+    "description": "Learn advanced cooking techniques for gourmet cuisine."
+  },
+  {
+    "id": 14,
+    "userId": 8,
+    "duration": "12 weeks",
+    "category": "Marketing",
+    "title": "Brand Management",
+    "description": "Learn the essentials of managing and developing a brand."
+  },
+  {
+    "id": 15,
+    "userId": 9,
+    "duration": "8 weeks",
+    "category": "Engineering",
+    "title": "Renewable Energy Systems",
+    "description": "Explore the technologies behind renewable energy systems."
+  },
+  {
+    "id": 16,
+    "userId": 9,
+    "duration": "10 weeks",
+    "category": "Mechanical Engineering",
+    "title": "Advanced CAD Design",
+    "description": "Master advanced computer-aided design techniques."
+  },
+  {
+    "id": 17,
+    "userId": 10,
+    "duration": "8 weeks",
+    "category": "Psychology",
+    "title": "Cognitive Behavioral Therapy",
+    "description": "Learn the principles and practices of cognitive behavioral therapy."
+  },
+  {
+    "id": 18,
+    "userId": 11,
+    "duration": "10 weeks",
+    "category": "Business",
+    "title": "Financial Planning and Analysis",
+    "description": "Develop skills in financial planning and business analysis."
+  },
+  {
+    "id": 19,
+    "userId": [12, 9],
+    "duration": "12 weeks",
+    "category": "Electrical Engineering",
+    "title": "Circuit Design and Analysis",
+    "description": "Learn the fundamentals of designing and analyzing electrical circuits."
+  },
+  {
+    "id": 20,
+    "userId": [13, 9, 1],
+    "duration": "10 weeks",
+    "category": "Art",
+    "title": "Modern Art Movements",
+    "description": "Explore the major movements in modern art."
+  },
+  {
+    "id": 21,
+    "userId": [14, 10, 2],
+    "duration": "12 weeks",
+    "category": "Data Science",
+    "title": "Machine Learning Basics",
+    "description": "Learn the foundations of machine learning and its applications."
+  },
+  {
+    "id": 22,
+    "userId": [15, 5],
+    "duration": "8 weeks",
+    "category": "Education",
+    "title": "Instructional Design",
+    "description": "Learn how to design effective instructional materials for educational purposes."
+  }
+]

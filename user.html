@@ -1,0 +1,146 @@
+<div
+  class="relative flex flex-col flex-1 overflow-x-hidden overflow-y-auto"
+  data-page="user">
+  <header>
+    <div class="max-w-6xl px-5 mx-auto sm:px-6">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <div class="mr-4 shrink-0">
+          <a href="/" class="transition-opacity hover:opacity-90">
+            <svg
+              width="34"
+              height="30"
+              viewBox="0 0 34 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <title>logo</title>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M19.605 4.468 13.455 0 0 9.776l5.14 15.817h8.753L21.527 30l12.359-11.128-6.765-15.194-7.516.79Zm1.026.746-1.026-.746-9.024.949-3.457 16.267 6.769 3.909h1.698l5.826 3.363L32.86 18.653 26.597 4.587l-5.966.627Zm0 0 6.279 4.562-5.14 15.817h-6.18l-7.508-4.335 3.201-15.062 9.348-.982Z"
+                fill="#6B21A8" />
+            </svg>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="text-gray-100 bg-gray-900 btn hover:bg-gray-800"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <article class="max-w-6xl px-5 py-8 mx-auto sm:px-6">
+      <h1
+        class="text-2xl font-bold text-slate-800 md:text-3xl"
+        id="user-details">
+        User Details
+      </h1>
+      <div class="mt-8">
+        <div class="mb-8 bg-white shadow-sm rounded-xl">
+          <div class="flex flex-col md:flex-row md:-mr-px">
+            <div class="grow">
+              <div class="p-6 space-y-12">
+                <!-- User Information -->
+                <section>
+                  <h2 class="user__detail__title">User Information</h2>
+                  <ul>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">Id</div>
+                      <div class="user__detail__value" id="id"></div>
+                    </li>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">First Name</div>
+                      <div class="user__detail__value" id="first_name"></div>
+                    </li>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">Last Name</div>
+                      <div class="user__detail__value" id="last_name"></div>
+                    </li>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">Age</div>
+                      <div class="user__detail__value" id="age"></div>
+                    </li>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">Gender</div>
+                      <div class="user__detail__value" id="gender"></div>
+                    </li>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">Email</div>
+                      <div class="user__detail__value" id="email"></div>
+                    </li>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">Birth date</div>
+                      <div class="user__detail__value" id="birthdate"></div>
+                    </li>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">Height</div>
+                      <div class="user__detail__value" id="height"></div>
+                    </li>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">Phone</div>
+                      <div class="user__detail__value" id="phone"></div>
+                    </li>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">Username</div>
+                      <div class="user__detail__value" id="username"></div>
+                    </li>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">Weight</div>
+                      <div class="user__detail__value" id="weight"></div>
+                    </li>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">Education</div>
+                      <div class="user__detail__value" id="education"></div>
+                    </li>
+                  </ul>
+                </section>
+                <!-- Work Information -->
+                <section>
+                  <h2 class="user__detail__title">Work Information</h2>
+                  <ul>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">Company</div>
+                      <div class="user__detail__value" id="name"></div>
+                    </li>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">Position</div>
+                      <div class="user__detail__value" id="position"></div>
+                    </li>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">Salary</div>
+                      <div class="user__detail__value" id="salary"></div>
+                    </li>
+                    <li class="user__detail__item">
+                      <div class="user__detail__label">Start Date</div>
+                      <div class="user__detail__value" id="start_date"></div>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Courses -->
+      <section>
+        <div class="mb-8 sm:flex sm:justify-between sm:items-center">
+          <div class="mb-4 sm:mb-0">
+            <h2 class="text-2xl font-bold text-slate-800 md:text-3xl">
+              Courses
+            </h2>
+          </div>
+        </div>
+        <!-- Courses listing-->
+        <div class="grid grid-cols-12 gap-6" id="courses"></div>
+      </section>
+    </article>
+  </main>
+</div>

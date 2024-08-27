@@ -1,0 +1,484 @@
+<div class="relative flex flex-col flex-1 overflow-x-hidden overflow-y-auto">
+  <header>
+    <div class="max-w-6xl px-5 mx-auto sm:px-6">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <div class="mr-4 shrink-0">
+          <a href="/" class="transition-opacity hover:opacity-90">
+            <svg
+              width="34"
+              height="30"
+              viewBox="0 0 34 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <title>logo</title>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M19.605 4.468 13.455 0 0 9.776l5.14 15.817h8.753L21.527 30l12.359-11.128-6.765-15.194-7.516.79Zm1.026.746-1.026-.746-9.024.949-3.457 16.267 6.769 3.909h1.698l5.826 3.363L32.86 18.653 26.597 4.587l-5.966.627Zm0 0 6.279 4.562-5.14 15.817h-6.18l-7.508-4.335 3.201-15.062 9.348-.982Z"
+                fill="#6B21A8" />
+            </svg>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="text-gray-100 bg-gray-900 btn hover:bg-gray-800"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="max-w-6xl px-5 py-8 mx-auto sm:px-6">
+      <div
+        class="flex flex-col items-center justify-between gap-3 mb-8 xs:flex-row xs:gap-0">
+        <h2 class="text-2xl font-bold md:text-3xl text-slate-800">Users</h2>
+        <div class="flex flex-wrap justify-center gap-3 xs:flex-nowrap">
+          <div class="flex items-center">
+            <span class="mr-2 text-sm font-medium">View as:</span>
+            <div role="group" class="flex view-mode-group">
+              <button
+                data-value="table"
+                class="px-2 py-2 m-0 bg-white border rounded-tl-lg rounded-bl-lg">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <title>Table</title>
+                  <path
+                    d="M7 1H3a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M7 1v18M1 7v10a2 2 0 0 0 2 2h4M1 7h18m0 0v10a2 2 0 0 1-2 2H7"
+                    stroke="#737373"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button
+                data-value="card"
+                class="px-2 py-2 m-0 bg-white border border-l-0 rounded-tr-lg rounded-br-lg">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <title>Card</title>
+                  <path
+                    d="M8 1H1v7h7V1ZM19 1h-7v7h7V1ZM19 12h-7v7h7v-7ZM8 12H1v7h7v-7Z"
+                    stroke="#737373"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button
+            class="flex items-center gap-1.5 transition bg-white border border-gray-100 hover:border-gray-300 btn hover:shadow-sm text-purple-600 js-open-modal-btn">
+            <svg
+              aria-hidden="true"
+              class="w-3.5"
+              width="24"
+              height="20"
+              viewBox="0 0 24 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 19v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M8.5 9a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM20 6v6M23 9h-6"
+                stroke="#9333EA"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            Add User
+          </button>
+        </div>
+      </div>
+
+      <section id="view"></section>
+    </section>
+  </main>
+</div>
+
+<!-- Modal -->
+<div class="w-full max-w-2xl modal hide-modal" id="js-modal">
+  <div class="max-h-full mx-auto overflow-auto bg-white rounded shadow-lg">
+    <!-- Modal header-->
+    <div class="px-5 py-3 border-b border-slate-200">
+      <div class="flex items-center justify-between">
+        <div class="text-lg font-semibold text-slate-800">Add User</div>
+        <button class="modal__close js-close-modal-btn">
+          <span class="sr-only">Close</span>
+          <svg
+            class="w-4 h-4"
+            aria-hidden="true"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M16.98 2.434a1 1 0 0 0-1.414-1.414L9 7.586 2.434 1.02A1 1 0 0 0 1.02 2.434L7.586 9 1.02 15.566a1 1 0 1 0 1.414 1.414L9 10.414l6.566 6.566a1 1 0 1 0 1.414-1.414L10.414 9l6.566-6.566Z"
+              fill="#94a3b8" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Modal content -->
+    <div class="px-5">
+      <form class="space-y-4 divide-y js-add-user-form">
+        <div class="py-5">
+          <!-- 1. User Information -->
+          <h2 class="mb-5 font-bold text-gray-800 text-md">
+            <span class="text-purple-800">1.</span>User Information
+          </h2>
+          <div class="space-y-4">
+            <!-- Email -->
+            <div>
+              <label for="email" class="block mb-1 text-sm font-medium"
+                >Email<span aria-hidden="true" class="ml-1 text-rose-400"
+                  >*</span
+                ></label
+              >
+              <input
+                id="email"
+                type="text"
+                name="email"
+                aria-describedby="emailError"
+                aria-required="true"
+                class="w-full form-input" />
+              <div
+                id="emailError"
+                aria-live="assertive"
+                class="mt-1 text-xs text-rose-500"></div>
+            </div>
+
+            <!-- Phone -->
+            <div>
+              <label for="phone" class="block mb-1 text-sm font-medium"
+                >Phone<span aria-hidden="true" class="ml-1 text-rose-400"
+                  >*</span
+                ></label
+              >
+              <input
+                id="phone"
+                type="text"
+                name="phone"
+                aria-describedby="phoneError"
+                aria-required="true"
+                class="w-full form-input" />
+              <div
+                id="phoneError"
+                aria-live="assertive"
+                class="mt-1 text-xs text-rose-500"></div>
+            </div>
+
+            <!-- Username -->
+            <div>
+              <label for="username" class="block mb-1 text-sm font-medium"
+                >Username<span aria-hidden="true" class="ml-1 text-rose-400"
+                  >*</span
+                ></label
+              >
+              <input
+                id="username"
+                type="text"
+                name="username"
+                aria-describedby="usernameError"
+                aria-required="true"
+                class="w-full form-input" />
+              <div
+                id="usernameError"
+                aria-live="assertive"
+                class="mt-1 text-xs text-rose-500"></div>
+            </div>
+
+            <!-- First name and Last name -->
+            <div class="space-y-4 xs:space-y-0 xs:space-x-4 xs:flex">
+              <div class="flex-1">
+                <label for="first_name" class="block mb-1 text-sm font-medium"
+                  >First name<span aria-hidden="true" class="ml-1 text-rose-400"
+                    >*</span
+                  ></label
+                >
+                <input
+                  id="first_name"
+                  type="text"
+                  name="first_name"
+                  aria-describedby="firstNameError"
+                  aria-required="true"
+                  class="w-full form-input" />
+                <div
+                  id="firstNameError"
+                  aria-live="assertive"
+                  class="mt-1 text-xs text-rose-500"></div>
+              </div>
+              <div class="flex-1">
+                <label for="last_name" class="block mb-1 text-sm font-medium"
+                  >Last name<span aria-hidden="true" class="ml-1 text-rose-400"
+                    >*</span
+                  ></label
+                >
+                <input
+                  id="last_name"
+                  type="text"
+                  name="last_name"
+                  aria-describedby="lastNameError"
+                  aria-required="true"
+                  class="w-full form-input" />
+                <div
+                  id="lastNameError"
+                  aria-live="assertive"
+                  class="mt-1 text-xs text-rose-500"></div>
+              </div>
+            </div>
+
+            <!-- Gender -->
+            <div>
+              <label for="gender" class="block mb-1 text-sm font-medium"
+                >Gender<span aria-hidden="true" class="ml-1 text-rose-400"
+                  >*</span
+                ></label
+              >
+              <select
+                id="gender"
+                name="gender"
+                aria-describedby="genderError"
+                aria-required="true"
+                class="w-full form-select">
+                <option disabled selected>-- select an option --</option>
+                <option value="Male" selected>Male</option>
+                <option value="Female">Female</option>
+              </select>
+              <div
+                id="genderError"
+                aria-live="assertive"
+                class="mt-1 text-xs text-rose-500"></div>
+            </div>
+
+            <!-- Birth date and Age -->
+            <div class="space-y-4 xs:space-y-0 xs:space-x-4 xs:flex">
+              <div class="flex-1">
+                <label for="birthdate" class="block mb-1 text-sm font-medium"
+                  >Birth date<span aria-hidden="true" class="ml-1 text-rose-400"
+                    >*</span
+                  ></label
+                >
+                <input
+                  id="birthdate"
+                  type="date"
+                  name="birthdate"
+                  aria-describedby="birthdateError"
+                  aria-required="true"
+                  class="w-full form-input" />
+                <div
+                  id="birthdateError"
+                  aria-live="assertive"
+                  class="mt-1 text-xs text-rose-500"></div>
+              </div>
+              <div class="flex-1">
+                <label class="block mb-1 text-sm font-medium" for="age"
+                  >Age<span aria-hidden="true" class="ml-1 text-rose-400"
+                    >*</span
+                  ></label
+                >
+                <input
+                  id="age"
+                  type="text"
+                  name="age"
+                  aria-describedby="ageError"
+                  aria-required="true"
+                  class="w-full form-input" />
+                <div
+                  id="ageError"
+                  aria-live="assertive"
+                  class="mt-1 text-xs text-rose-500"></div>
+              </div>
+            </div>
+
+            <!-- Height and Weight -->
+            <div class="space-y-4 xs:space-y-0 xs:space-x-4 xs:flex">
+              <div class="flex-1">
+                <label for="height" class="block mb-1 text-sm font-medium"
+                  >Height<span aria-hidden="true" class="ml-1 text-rose-400"
+                    >*</span
+                  ></label
+                >
+                <input
+                  id="height"
+                  name="height"
+                  aria-describedby="heightError"
+                  aria-required="true"
+                  class="w-full form-input"
+                  type="text" />
+                <div
+                  id="heightError"
+                  aria-live="assertive"
+                  class="mt-1 text-xs text-rose-500"></div>
+              </div>
+              <div class="flex-1">
+                <label for="weight" class="block mb-1 text-sm font-medium"
+                  >Weight<span aria-hidden="true" class="ml-1 text-rose-400"
+                    >*</span
+                  ></label
+                >
+                <input
+                  id="weight"
+                  type="text"
+                  name="weight"
+                  aria-describedby="weightError"
+                  aria-required="true"
+                  class="w-full form-input" />
+                <div
+                  id="weightError"
+                  aria-live="assertive"
+                  class="mt-1 text-xs text-rose-500"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5 pb-1">
+          <!-- 2. Work Information -->
+          <h2 class="mb-5 font-bold text-gray-800 text-md">
+            <span class="text-purple-800">2.</span>Work Information
+          </h2>
+          <div class="space-y-4">
+            <!-- Education -->
+            <div>
+              <label class="block mb-1 text-sm font-medium" for="education"
+                >Education<span aria-hidden="true" class="ml-1 text-rose-400"
+                  >*</span
+                ></label
+              >
+              <input
+                id="education"
+                type="text"
+                name="education"
+                aria-describedby="educationError"
+                aria-required="true"
+                class="w-full form-input" />
+              <div
+                id="educationError"
+                aria-live="assertive"
+                class="mt-1 text-xs text-rose-500"></div>
+            </div>
+
+            <!-- Company Name and Position-->
+            <div class="space-y-4 xs:space-y-0 xs:space-x-4 xs:flex">
+              <div class="flex-1">
+                <label class="block mb-1 text-sm font-medium" for="name"
+                  >Company Name<span
+                    aria-hidden="true"
+                    class="ml-1 text-rose-400"
+                    >*</span
+                  ></label
+                >
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  aria-describedby="nameError"
+                  aria-required="true"
+                  class="w-full form-input" />
+                <div
+                  id="nameError"
+                  aria-live="assertive"
+                  class="mt-1 text-xs text-rose-500"></div>
+              </div>
+              <div class="flex-1">
+                <label for="position" class="block mb-1 text-sm font-medium"
+                  >Position<span aria-hidden="true" class="ml-1 text-rose-400"
+                    >*</span
+                  ></label
+                >
+                <input
+                  id="position"
+                  type="text"
+                  name="position"
+                  aria-describedby="positionError"
+                  aria-required="true"
+                  class="w-full form-input" />
+                <div
+                  id="positionError"
+                  aria-live="assertive"
+                  class="mt-1 text-xs text-rose-500"></div>
+              </div>
+            </div>
+
+            <!-- Salary -->
+            <div>
+              <label for="salary" class="block mb-1 text-sm font-medium"
+                >Salary<span aria-hidden="true" class="ml-1 text-rose-400"
+                  >*</span
+                ></label
+              >
+              <input
+                id="salary"
+                type="text"
+                name="salary"
+                aria-describedby="salaryError"
+                aria-required="true"
+                class="w-full form-input" />
+              <div
+                id="salaryError"
+                aria-live="assertive"
+                class="mt-1 text-xs text-rose-500"></div>
+            </div>
+
+            <!-- Start date -->
+            <div>
+              <label for="start_date" class="block mb-1 text-sm font-medium"
+                >Start Date<span aria-hidden="true" class="ml-1 text-rose-400"
+                  >*</span
+                ></label
+              >
+              <input
+                type="date"
+                id="start_date"
+                name="start_date"
+                aria-describedby="startDateError"
+                aria-required="true"
+                class="w-full form-input" />
+              <div
+                id="startDateError"
+                aria-live="assertive"
+                class="mt-1 text-xs text-rose-500"></div>
+            </div>
+          </div>
+          <div
+            id="formValidationError"
+            aria-live="assertive"
+            class="mt-4 text-xs text-rose-500"></div>
+        </div>
+        <div class="px-5 py-4 -ml-5 -mr-5 border-t border-slate-200">
+          <div class="flex flex-wrap justify-end space-x-2">
+            <button
+              type="reset"
+              class="border btn btn--small border-slate-200 hover:border-slate-300 text-slate-600 js-reset-btn">
+              Cancel
+            </button>
+            <button
+              class="text-gray-100 bg-gray-900 js-submit-btn btn hover:bg-gray-800 disabled:opacity-40">
+              Add User
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Modal footer -->
+  </div>
+</div>
+<!-- Modal overlay -->
+<div class="modal-overlay hide-overlay" id="js-modal-overlay"></div>
+
+<!-- Toast -->
+<div class="toast-container" id="toast-container"></div>

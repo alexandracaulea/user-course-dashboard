@@ -1,0 +1,65 @@
+<div
+  class="relative flex flex-col flex-1 overflow-x-hidden overflow-y-auto"
+  data-page="course">
+  <header>
+    <div class="max-w-6xl px-5 mx-auto sm:px-6">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <div class="mr-4 shrink-0">
+          <a href="/" class="transition-opacity hover:opacity-90">
+            <svg
+              width="34"
+              height="30"
+              viewBox="0 0 34 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <title>logo</title>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M19.605 4.468 13.455 0 0 9.776l5.14 15.817h8.753L21.527 30l12.359-11.128-6.765-15.194-7.516.79Zm1.026.746-1.026-.746-9.024.949-3.457 16.267 6.769 3.909h1.698l5.826 3.363L32.86 18.653 26.597 4.587l-5.966.627Zm0 0 6.279 4.562-5.14 15.817h-6.18l-7.508-4.335 3.201-15.062 9.348-.982Z"
+                fill="#6B21A8" />
+            </svg>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="text-gray-100 bg-gray-900 btn hover:bg-gray-800"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="hidden bg-gray-100 md:block md:h-60">
+      <img
+        class="object-cover w-full h-full"
+        src="/src/images/course-img.jpg"
+        width="2560"
+        height="440"
+        alt="Course image" />
+    </div>
+
+    <section class="py-6 text-center border-b border-gray-200 bg-white/40">
+      <div class="w-full px-4 sm:px-6 lg:px-8">
+        <div
+          class="max-w-3xl mx-auto mb-4"
+          id="course__page__information"></div>
+      </div>
+    </section>
+
+    <div class="w-full px-4 py-8 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="mb-6 text-xl font-bold leading-snug text-slate-800">
+          Users enrolled
+        </h3>
+        <div class="grid grid-cols-12 gap-3" id="enrolled__user__card"></div>
+      </div>
+    </div>
+  </main>
+</div>
